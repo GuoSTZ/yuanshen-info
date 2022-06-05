@@ -1,0 +1,84 @@
+.database-ListView {
+  .Toolbar {
+    margin-bottom: 10px;
+
+    >button {
+      border-radius: 2px;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .ButtonGroup {
+    >a:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.database-DetailView {
+  :global {
+    table {
+      table-layout: fixed !important;
+    }
+
+    .ant-descriptions-bordered .ant-descriptions-item-label,
+    .ant-descriptions-bordered .ant-descriptions-item-content {
+      padding: 12px 15px !important;
+    }
+  }
+
+  .DetailStyle {
+    border: 0px !important;
+    margin-top: 8px !important;
+
+    &:first-child {
+      margin-top: 16px !important;
+    }
+
+    :global {
+      .ant-descriptions-header {
+        margin-bottom: 0;
+
+        .ant-descriptions-title {
+          height: 22px !important;
+          margin-bottom: 16px !important;
+          padding: 0px !important;
+          padding-left: 0px !important;
+          border: 0px !important;
+          border-radius: 0px !important;
+          font-size: 14px !important;
+          font-weight: 700 !important;
+          line-height: 22px !important;
+          color: #081333;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 14px;
+            margin-right: 4px;
+            margin-bottom: -1px;
+            border-radius: 2px;
+            background-color: #3385ff;
+          }
+        }
+      }
+
+      .ant-descriptions-item-label {
+        width: 160px;
+        color: #38415C;
+        background-color: #f7f8fa !important;
+      }
+
+      .ant-descriptions-item-content {
+        vertical-align: top;
+        word-wrap: break-word;
+        word-break: normal;
+        color: #38415C;
+      }
+    }
+  }
+}

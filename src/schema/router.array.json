@@ -1,0 +1,16 @@
+{
+  "routes": {
+    "type": "array",
+    "items": [
+      {
+        "type": "object",
+        "path": "/*",
+        "element": "HomeContainer",
+        "children": {
+          "type": "array",
+          "items": []
+        }
+      }
+    ]
+  }
+}

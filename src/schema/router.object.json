@@ -1,0 +1,16 @@
+{
+  "routes": {
+    "type": "object",
+    "properties": {
+      "List": {
+        "type": "object",
+        "path": "/*",
+        "element": "HomeContainer",
+        "children": {
+          "type": "object",
+          "properties": {}
+        }
+      }
+    }
+  }
+}
